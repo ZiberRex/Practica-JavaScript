@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" src="estilo.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="JS/practica.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>HAHDAJSDHKJASD</h1>
+    <h1>Cacluladora </h1>
 
 
     <h2> Esta sera una practica para el curso de inicio en JavaScript</h2>
+
+<div id="contenedorprin">
+    <form name="calculadora" id="calculadora">
+        <input type="text" name="display" id="display">
+        <div>
+         <input type="button" id="uno" value="1" onclick="mostrardisplay(document.getElementById('uno').value)">
+         <input type="button" id="dos" value="2" onclick="mostrardisplay(document.getElementById('dos').value)">
+         <input type="button" id="tres" value="3"onclick="mostrardisplay(document.getElementById('tres').value)">
+         <input type="button" id="suma" value="+" onclick="mostrardisplay(document.getElementById('suma').value)">
+        </div>
+         <div>
+             <input type="button" id="cuatro" value="4" onclick="mostrardisplay(document.getElementById('cuatro').value)">
+             <input type="button" id="cinco" value="5" onclick="mostrardisplay(document.getElementById('cinco').value)">
+             <input type="button" id="seis" value="6" onclick="mostrardisplay(document.getElementById('seis').value)">
+             <input type="button" id="resta" value="-" onclick="mostrardisplay(document.getElementById('resta').value)">
+            </div>
+                 <div>
+                     <input type="button" id="siete" value="7" onclick="mostrardisplay(document.getElementById('siete').value)">
+                     <input type="button" id="ocho" value="8" onclick="mostrardisplay(document.getElementById('ocho').value)">
+                     <input type="button" id="nueve" value="9" onclick="mostrardisplay(document.getElementById('nueve').value)">
+                     <input type="button" id="multi" value="*" onclick="mostrardisplay(document.getElementById('multi').value)">
+                </div>
+                     <div>
+                         <input type="button" id="cero" value="0" onclick="mostrardisplay(document.getElementById('cero').value)">
+                         <input type="button" id="decimal" value="." onclick="mostrardisplay(document.getElementById('decimal').value)">
+                         <input type="button" id="porce" value="%" onclick="mostrardisplay(document.getElementById('porce').value)">
+                         <input type="button" id="dividir" value="/" onclick="mostrardisplay(document.getElementById('dividir').value)">
+                     </div>
+                            <div id="result">
+                                <input type="button" id="eliminar" value="" onclick="borrar(document.getElementById('eliminar').value)">
+                                <input type="button" id="iguall" value="=" onclick="igual(document.getElementById('iguall').value)">
+                            </div>
+    </form>
+
+</div>  
+
+
+
+
+
+    <script src="JS/practica.js"></script>
 </body>
 </html>

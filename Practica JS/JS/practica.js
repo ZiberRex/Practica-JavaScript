@@ -1,18 +1,12 @@
-// Fuincion
-
-function nombre(){
-    var name = "Emilio";
-    console.log("Su Nombre es: " + name);
+function mostrardisplay(a){
+    document.getElementById('display').value += a;
 }
 
-var funcion = nombre();
-
-//Funcion suma
-
-function suma(){
-    var a = 45;
-    var b = 6;
-    console.log("La suma  es: " + (a + b));
+function borrar(b){
+    document.getElementById('display').value = b;
 }
 
-var sumafuncion = suma();
+function igual(){
+    var result= eval(document.getElementById('display').value);
+    document.getElementById('display').value= result;
+}
