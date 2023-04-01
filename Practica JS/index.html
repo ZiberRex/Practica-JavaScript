@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" src="estilo.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>Mi Calculadora</title>
 </head>
 <body>
     <h1>Cacluladora </h1>
@@ -13,7 +13,7 @@
 
     <h2> Esta sera una practica para el curso de inicio en JavaScript</h2>
 
-<div id="contenedorprin">
+<div class="contenedorprin">
     <form name="calculadora" id="calculadora">
         <input type="text" name="display" id="display">
         <div>
@@ -40,18 +40,13 @@
                          <input type="button" id="porce" value="%" onclick="mostrardisplay(document.getElementById('porce').value)">
                          <input type="button" id="dividir" value="/" onclick="mostrardisplay(document.getElementById('dividir').value)">
                      </div>
-                            <div id="result">
-                                <input type="button" id="eliminar" value="" onclick="borrar(document.getElementById('eliminar').value)">
+                            <div class="result">
                                 <input type="button" id="iguall" value="=" onclick="igual(document.getElementById('iguall').value)">
+                                <button id="eliminar" value="" onclick="borrar(document.getElementById('eliminar').value)">Borrar</button>
                             </div>
+                            
     </form>
-
 </div>  
-
-
-
-
-
     <script src="JS/practica.js"></script>
 </body>
 </html>

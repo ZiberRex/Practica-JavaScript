@@ -1,5 +1,62 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    box-sizing: border-box;
+   
 }
 
+body{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f1953c;
+}
+
+body div.contenedorprin{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    background-color: rgb(13, 48, 124);
+    border-radius: 10px;
+}
+
+div input[type='button'],button{
+    width: 40px;
+    height: 40px;
+    margin: 3px auto;
+}
+
+div input[type='text']{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(186, 214, 238);
+    border: solid gray;
+    color: black;
+    padding: 10px 12px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+div.result input, div.result button{
+    height: 40px;
+    width: 75px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    border-radius: 7px;
+}
+div.result button{
+    background-color: crimson;
+    text-align: center;
+    color: white;
+}
+
+#suma, #resta, #multi,#dividir, #porce{
+    background-color: rgb(13, 80, 80);
+    color: whitesmoke;
+}
